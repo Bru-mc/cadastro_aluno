@@ -1,0 +1,21 @@
+@import 'globalStyles.css';
+.side-nav-content{
+    max-width: 300px;
+    height: calc(100vh - 130px);
+    background: var(--color-four) !important;
+}
+.side-nav-content a{
+    color: var(--color-six) !important;
+    font-size: 25px;
+    width: fit-content !important;
+}
+.nav-pills .nav-item{
+    width: 100% !important;
+}
+.nav-pills .active{
+    background-color: var(--color-three) !important;
+    border: none !important;
+}
+.nav-pills .nav-link {
+    
+}

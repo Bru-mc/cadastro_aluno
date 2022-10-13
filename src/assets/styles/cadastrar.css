@@ -1,0 +1,13 @@
+.container-cadastro{
+    width: 100%;
+}
+.form-container{
+    display: flex;
+    width: 50%;
+}
+form{
+    width: 100%;
+}
+div label{
+    flex: none;
+}

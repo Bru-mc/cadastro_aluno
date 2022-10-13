@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" type="text/css" href="/styles/globalStyles.css">
+    <link rel="stylesheet" type="text/css" href="/styles/cadastrar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <%- include('../components/header'); %>
+    </div>
+    <div class="pageContainer d-flex">
+        <div class="sidebar">
+            <%- include('../components/sidebar'); %>
+        </div>
+        <% if (showMessage) { %>
+        <div class="toast-message">
+            <%- include('../components/toast'); %>
+        </div>
+        <% } %>    
+        <div class="container-cadastro d-flex flex-column align-items-center">
+            <div class="form-container">
+                <form action="/cadastrar" method="post">
+                    <div class="d-flex flex-column p-5">
+                        <div class="mb-3 d-flex align-items-center">
+                            <label 
+                            for="inputNome" 
+                            class="form-label fw-bold me-4"
+                            aria-required="true"
+                            >Nome:</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            name="nome"
+                            placeholder="Nome do aluno..."
+                            >
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            <label 
+                            for="inputNota1" 
+                            class="form-label fw-bold me-4"
+                            aria-required="true"
+                            >Nota 1:</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            name="primeiraNota"
+                            placeholder="Nota 1..."
+                            >
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            <label 
+                            for="inputNota2" 
+                            class="form-label fw-bold me-4"
+                            aria-required="true"
+                            >Nota 2:</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            name="segundaNota"
+                            placeholder="Nota 2..."
+                            >
+                        </div>
+                        <button class="btn btn-success">Cadastrar</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

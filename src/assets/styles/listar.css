@@ -1,0 +1,13 @@
+.container-listagem{
+    width: 100%;
+}
+table th{
+    font-size: 25px;
+    border: 2px solid var(--color-two);
+}
+table td{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    border: 2px solid var(--color-two);
+}

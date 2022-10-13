@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-two);
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+    color: brown;
+}
+a{
+    text-decoration: none;
+}
+.pageContainer{
+    width: 100%;
+}
+.btn{
+    padding: 5px 15px;
+    font-size: 20px;
+}
+
+/* Colors */
+:root{
+    --color-one: #fefefd;
+    --color-two: #fdfaf0;
+    --color-three: #f0e6d6;
+    --color-four: #e0d1ba;
+    --color-five: #0e6668;
+    --color-six: #535353;
+}
